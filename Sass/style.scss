@@ -1,0 +1,615 @@
+@import "config";
+@import "buttons";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: $primary;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $dark;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    
+    h1 {
+        color: $light;
+        font-size: 1.3rem;
+    }
+
+    .header-icon {
+    color: $light;    
+    font-size: 1.5rem;
+    padding: 0.2rem;
+    }
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+
+    li {
+        padding: 0.7rem 1rem;
+        transition: all ease-in-out 0.2s;
+        opacity: 80%;
+
+        &:hover {
+            background-color: $hover-dark;
+            opacity: 100%;
+        }
+    }
+    
+    a {
+        text-decoration: none;
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: $light;
+        
+    }
+}
+// Navigation ends/
+
+// Hero section starts/
+.container {
+    background: url(/images/pexels-rahul-pandit-1933900.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    .profile-picture {
+        width: 48%;
+        padding: 3rem;
+        margin-left: 2rem;
+        border-radius: 4rem;
+        opacity: 85%;
+        transition: all ease-in-out 0.1s;
+
+        &:hover {
+            opacity: 100%;
+        }
+    }
+
+    .meta-info {
+        color: $light;
+        width: 100%;
+        padding: 1.5rem;
+        margin-right: 1.5rem;
+        border-radius: 1.5rem;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.173));
+
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p{
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin-bottom: 2rem;
+        }
+    }
+}
+// hero section ends //
+
+// Portfolio section starts//
+.my-portfolio {
+    margin-top: 1rem;
+    h1 {
+        padding: 1rem;
+    }
+    
+    .boxes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            h3 {
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+            }
+
+            a {
+                text-decoration: none;
+                color: $light;
+                background-color: $dark;
+                padding: 0.5rem;
+                opacity: 85%;
+                transition: all ease-in-out 0.4;
+
+                &:hover {
+                    opacity: 100%;
+                }
+            }
+    
+        .box-1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            width: 280px;
+            height: 330px;
+            background: url(/images/personalwebsite.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 25%;
+            padding: 2rem; 
+            margin: 2rem;
+            transition: all ease-in-out 0.2s;
+
+            &:hover {
+                transform: translate(0px, 5px);
+            }
+    }
+
+        .box-2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            width: 280px;
+            height: 330px;
+            padding: 2rem; 
+            margin: 2rem;
+            background: url(/images/blog.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 25%;
+            transition: all ease-in-out 0.2s;
+
+            &:hover {
+                transform: translate(0px, 5px);
+            }
+        }
+
+            .box-3 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                box-sizing: border-box;
+                width: 280px;
+                height: 330px;
+                padding: 2rem; 
+                margin: 2rem;
+                background: url(/images/ecommerce.jpg);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                border-radius: 25%;    
+                transition: all ease-in-out 0.2s;
+
+            &:hover {
+                transform: translate(0px, 5px);
+            }
+        }
+    }
+}
+// Portfolio section ends//
+
+// testimonials by people/
+.my-reputation {
+    margin-top: 2rem;
+    padding: 1rem;
+    .testimonials {
+
+        .person-one {
+            padding: 1rem;
+            margin: 2rem;
+            box-shadow: $shadow;
+
+            img {
+                width: 70px;
+                height: 80px;
+                border-radius: 50%;                
+            }
+
+            p {
+                margin-top: 0.5rem;
+            }
+        }
+
+        .person-two {
+            padding: 1rem;
+            margin: 2rem;
+            box-shadow: $shadow;
+            
+            img {
+                width: 70px;
+                height: 80px;
+                border-radius: 50%;                
+            }
+
+            p {
+                margin-top: 0.5rem;
+            }
+        }
+
+        .person-three {
+            padding: 1rem;
+            margin: 2rem;
+            text-align: left;
+            box-shadow: $shadow;
+
+            img {
+                width: 70px;
+                height: 80px;
+                border-radius: 50%;                
+            }
+
+            p {
+                margin-top: 0.5rem;
+            }
+        }
+    }
+}
+// testimonials section ends/
+
+
+// Experiance grid starts/
+.number-of-clients {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: $dark;
+    color: $primary;
+    text-align: center;
+    padding: 1.5rem 2rem;
+    margin: 0rem 0.9rem;
+}
+// ends/
+
+
+// Pricing grid starts/
+.my-price-header {
+    padding: 1rem;
+    margin-top: 2.5rem;
+
+}
+
+.my-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .basic-service {
+        margin: 2rem;
+        width: 25%;
+        // position: absolute;
+        text-align: center;
+        box-shadow: $shadow;
+        border: 1px solid $dark;
+        transition: all ease-in-out 0.1s;
+
+        &:hover {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        h2 {
+            background-color: $dark;
+            color: $primary;
+            font-size: 2rem;
+            padding: 2rem 5rem;
+            border: 1px solid $dark;
+        }
+
+        .price {
+            padding: 1.5rem;
+        }
+
+        h3 {
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .p {
+            border: 1px solid gray;
+            padding: 1rem;
+        }
+
+        .signup {
+            background-color: rgb(188, 188, 188);
+            padding: 2.5rem;
+            border: 1px solid gray;
+
+            a {
+                text-decoration: none;
+                color: $hover-dark;
+                background-color: $light;
+                padding: 0.8rem 1.5rem;
+                transition: all ease-in-out 0.2s;
+                font-weight: bold;
+
+                &:hover {
+                    background-color: $hover-dark;
+                    color: $light;
+                }
+            }
+        }
+    }
+
+    .pro-service {
+        margin: 2rem;
+        width: 25%;
+        // position: absolute;
+        text-align: center;
+        box-shadow: $shadow;
+        border: 1px solid $dark;
+        transition: all ease-in-out 0.1s;
+
+        &:hover {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        h2 {
+            background-color: $dark;
+            color: $primary;
+            font-size: 2rem;
+            padding: 2rem 5rem;
+            border: 1px solid $dark;
+        }
+
+        .price {
+            padding: 1.5rem;
+        }
+
+        h3 {
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .p {
+            border: 1px solid gray;
+            padding: 1rem;
+        }
+
+        .signup {
+            background-color: rgb(188, 188, 188);
+            padding: 2.5rem;
+            border: 1px solid gray;
+
+            a {
+                text-decoration: none;
+                color: $hover-dark;
+                background-color: $light;
+                padding: 0.8rem 1.5rem;
+                transition: all ease-in-out 0.2s;
+                font-weight: bold;
+
+                &:hover {
+                    background-color: $hover-dark;
+                    color: $light;
+                }
+            }
+        }
+    }
+
+    .premium-service {
+        margin: 2rem;
+        width: 25%;
+        // position: absolute;
+        text-align: center;
+        box-shadow: $shadow;
+        border: 1px solid $dark;
+        transition: all ease-in-out 0.1s;
+
+        &:hover {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        h2 {
+            background-color: $dark;
+            color: $primary;
+            font-size: 2rem;
+            padding: 2rem 4rem;
+            border: 1px solid $dark;
+        }
+
+        .price {
+            padding: 1.5rem;
+        }
+
+        h3 {
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .p {
+            border: 1px solid gray;
+            padding: 1rem;
+        }
+
+        .signup {
+            background-color: rgb(188, 188, 188);
+            padding: 2.5rem;
+            border: 1px solid gray;
+
+            a {
+                text-decoration: none;
+                color: $hover-dark;
+                background-color: $light;
+                padding: 0.8rem 1.5rem;
+                transition: all ease-in-out 0.2s;
+                font-weight: bold;
+
+                &:hover {
+                    background-color: $hover-dark;
+                    color: $light;
+                }
+            }
+        }
+    }
+}
+// pricing grid ends/
+
+// about section
+.about {
+    margin: 1.2rem 1rem;
+    padding: 0.5rem;
+    box-shadow: $shadow;
+
+    h1 {
+        margin-bottom: 1.2rem;
+    }
+}
+// ends
+
+.contact-me-header {
+    
+    h1 {
+        margin: 3rem 1.2rem 1rem 1.2rem;
+    }
+}
+
+// Contact informatin part/
+.contact-me {
+    box-shadow: $shadow;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    
+
+    img {
+        width: 400px;
+        opacity: 90%;
+        transition: all ease-in-out 0.5s;
+
+        &:hover {
+            opacity: 100%;
+            width: 450px;
+        }
+    }
+
+    .address-part {
+        display: flex;
+        align-items: center;
+        // color: $light;
+        
+        p {
+            font-size: 1.2rem;
+        }
+
+        ion-icon {
+            font-size: 2.5rem;
+            margin: 0.5rem 1.2rem;
+        }
+    }
+
+    .phone-number {
+        display: flex;
+        align-items: center;
+        // color: $light;
+
+        p {
+            font-size: 1.2rem;
+        }
+
+        ion-icon {
+            font-size: 2.5rem;
+            margin: 0.5rem 1.2rem;
+        }
+    }
+
+    .email {
+        display: flex;
+        align-items: center;
+        // color: $light;
+        
+        p {
+            font-size: 1.2rem;
+        }
+
+        ion-icon {
+            font-size: 2.5rem;
+            margin: 0.5rem 1.2rem;
+        }
+    }
+}
+// contact information part ends/
+
+
+// A form to contact me/
+.contact-form {
+    h3 {
+        margin: 1rem 1.5rem;
+    }
+
+    form {
+        margin: 1rem 1.2rem;
+
+        input, textarea {
+            margin: 0.4rem 0rem;
+            padding: 1.2rem;
+            width: 100%;
+            font-size: 1rem;
+        }
+
+        .send-message-button {
+            display: flex;
+            align-items: center;
+            margin-top: 1rem;
+            background-color: $light;
+            width: 18%;
+            padding: 0.6rem;
+            justify-content: center;
+            transition: all ease-in-out 0.1s;
+
+            &:hover {
+                background-color: rgb(164, 164, 164);
+            }
+            a {
+                text-decoration: none;
+                color: $dark;
+            }
+            ion-icon {
+                font-size: 1.6rem;
+                margin-right: 0.4rem;
+            }
+        }
+    }
+}
+// contact form end/
+
+// footer section/
+footer {
+    margin: 3rem 0rem 0rem 0rem;
+    background-color: rgb(206, 205, 205);
+    padding: 5rem;
+
+    p {
+        text-align: center;
+        margin-top: 1rem;
+    }
+}
+
+.social-media-links {
+    display: flex;
+    justify-content: center;
+
+    ion-icon {
+        padding: 0.4rem;
+        font-size: 1.6rem;
+
+        &:hover {
+            cursor: pointer;
+            color: rgb(125, 125, 125);
+        }
+    }
+}
+// foooter section ends/

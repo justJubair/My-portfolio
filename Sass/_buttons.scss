@@ -1,0 +1,60 @@
+// Hero section button/
+.resume-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $dark;
+    opacity: 80%;
+    padding: 0.4rem;
+    border-radius: 1.5rem;
+    width: 50%;
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+        opacity: 100%;
+        width: 60%;
+    }
+
+    ion-icon {
+        font-size: 1.2rem;
+        margin-right: 0.4rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: $light;
+        font-weight: bold;
+        font-size: 0.8rem;
+    }
+}
+
+//Experiance grid button/ 
+.resume-button-two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $light;
+    opacity: 80%;
+    padding: 0.4rem;
+    margin: 1rem 1.5rem;
+    border-radius: 1.5rem;
+    width: 20%;
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+        opacity: 100%;
+        width: 25%;
+    }
+
+    ion-icon {
+        font-size: 1.2rem;
+        margin-right: 0.4rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: $hover-dark;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+}
